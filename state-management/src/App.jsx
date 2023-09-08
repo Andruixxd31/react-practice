@@ -5,14 +5,15 @@ import Button from './components/Button'
 function App() {
   const [count, setCount] = useState(0)
     
-  const handleClick = () => {
+  const handleCountChange = () => {
     setCount(count + 1)
   }
 
   return (
     <>
       <div>
-        <Button onClick={() => handleClick()}/>
+        <h2>General Count: {count}</h2>
+        <Button count={count} handleCountChange={() => handleCountChange()}/>
       </div>
     </>
   )
