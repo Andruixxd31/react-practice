@@ -1,24 +1,11 @@
 import React from "react";
-import { useState } from "react";
 
-
-const ColorCounter = ({counterColor, onClick}) => {
-    const [color, setColor] = useState(counterColor);
-    const [count, setCount] = useState(1);
-
-    const handleColorClick = (e) => {
-        e.stopPropagation();
-        setCount(count + 1);
-    }
-
-    const handleColor = () => {
-        setColor("black")
-    }
-    
+const ColorCounter = ({color, totalCount, handleCountChange}) => {
     return(
-        <div onClick={() => handleColor()}>
+    
+        <div style={{"backgroundColor": `${color}`}}>
             <h3>{color}</h3>
-            <button type="button" onClick={(e) => handleColorClick(e)}>Count: {count}</button>
+            <button type="button" onClick={() => handleCountChange()}>Count: {totalCount}</button>
         </div>    
     );
 }
