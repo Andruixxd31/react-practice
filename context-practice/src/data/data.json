@@ -1,0 +1,17 @@
+{
+  {
+    id: 1,
+    dog: "Snouser",
+    name: "Sansores"
+  },
+  {
+    id: 2,
+    dog: "German Shepherd",
+    name: "Daisy"
+  },
+  { 
+    id: 3,
+    dog: "Springel Spaniel",
+    name: "Cash"
+  }
+}
