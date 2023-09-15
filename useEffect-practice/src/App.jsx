@@ -12,7 +12,6 @@ function App() {
         try {
           const url = "https://robohash.org/" + user;
           const response = await fetch(url);
-          console.log(response);
           setProfilePic(response.url)
         } catch (err) {
            console.log(err); 
